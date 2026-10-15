@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="25098" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="25073"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="FavoritesRoulette" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Favorites Roulette" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wdc-6v-ViD">
+                                <rect key="frame" x="30" y="80" width="340" height="45"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="DQ8-W2-tcx">
+                                <rect key="frame" x="70" y="180" width="250" height="250"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="250" id="GgR-U5-BV9"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gim-JZ-CQu">
+                                <rect key="frame" x="121.66666666666669" y="490" width="150" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="k4v-y4-bRh"/>
+                                    <constraint firstAttribute="height" constant="50" id="u8R-a7-Fzi"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Spin"/>
+                                <connections>
+                                    <action selector="spinButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mD0-QV-3oe"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your movie will appear here" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qg8-ay-zMg">
+                                <rect key="frame" x="90.666666666666671" y="560" width="208.66666666666663" height="20.333333333333371"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Movie description will appear here" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4At-XR-5Rc">
+                                <rect key="frame" x="93" y="638" width="214" height="90"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="DQ8-W2-tcx" firstAttribute="centerX" secondItem="Qg8-ay-zMg" secondAttribute="centerX" id="MRc-Hg-6gq"/>
+                            <constraint firstItem="Gim-JZ-CQu" firstAttribute="top" secondItem="DQ8-W2-tcx" secondAttribute="bottom" constant="60" id="Ti3-H6-UFk"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="DQ8-W2-tcx" secondAttribute="trailing" constant="73" id="cBO-fE-uZ4"/>
+                            <constraint firstItem="DQ8-W2-tcx" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="180" id="d4F-mB-Bb1"/>
+                            <constraint firstItem="Gim-JZ-CQu" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="eKc-Qk-FU4"/>
+                            <constraint firstItem="DQ8-W2-tcx" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="70" id="ibu-NA-hfL"/>
+                            <constraint firstItem="DQ8-W2-tcx" firstAttribute="top" secondItem="wdc-6v-ViD" secondAttribute="bottom" constant="55" id="kfU-CK-fxZ"/>
+                            <constraint firstItem="DQ8-W2-tcx" firstAttribute="centerX" secondItem="Gim-JZ-CQu" secondAttribute="centerX" id="nel-S4-yXx"/>
+                            <constraint firstItem="Qg8-ay-zMg" firstAttribute="top" secondItem="Gim-JZ-CQu" secondAttribute="bottom" constant="20" id="ugE-Q4-9Dh"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="nel-S4-yXx"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="movieDescriptionLabel" destination="4At-XR-5Rc" id="6Y9-Ba-8oH"/>
+                        <outlet property="movieImageView" destination="DQ8-W2-tcx" id="Qcb-T0-gSS"/>
+                        <outlet property="movieLabel" destination="Qg8-ay-zMg" id="EOC-uk-KLT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-92.36641221374046" y="79.577464788732399"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
